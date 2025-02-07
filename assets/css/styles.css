@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #5dade2;
+    --accent-color: #85c1e9;
+    --text-color: #2C3E50;
+    --light-bg: #F7F9FC;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../../images/ImagenPrincipal.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-weight: 600;
+}
+
+.hero-section .lead {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.plan-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+}
+
+.plan-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.plan-premium .plan-header {
+    background: #2980b9;
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+}
+
+.plan-features {
+    padding: 20px;
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.feature-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.btn-plan {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-plan:hover {
+    background: #5dade2;
+    transform: scale(1.05);
+}
+
+.plan-premium .btn-plan {
+    background: #2980b9;
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+}
+
+.plan-premium .btn-plan:hover {
+    background: #3498db;
+    background: linear-gradient(135deg, #3498db 0%, #5dade2 100%);
+}
+
+.comparison-table {
+    margin-top: 50px;
+}
